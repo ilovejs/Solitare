@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://solitaire.cloudvent.net/ -->
+<html class="no-js"><!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HTML5 Solitare Game | Crafted Pointlessly by Cloud Cannon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="http://solitaire.cloudvent.net/css/normalize.css">
+    <link rel="stylesheet" href="http://solitaire.cloudvent.net/css/boilerplate.css">
+    <link rel="stylesheet" href="http://solitaire.cloudvent.net/css/main.css">
+
+    <script data-main="js/main" src="./js/require.js"></script>
+</head>
+<body style="cursor: auto;">
+<audio id="audio-shuffle" preload="true">
+    <source src="audio/shuffle.mp3">
+    <source src="audio/shuffle.wav">
+</audio>
+
+<audio id="audio-win" preload="true">
+    <source src="audio/win.ogg">
+    <source src="audio/win.mp3">
+</audio>
+
+<audio id="audio-move" preload="true">
+    <source src="audio/move.ogg">
+    <source src="audio/move.mp3">
+</audio>
+
+<div id="container">
+<div class="board">
+<div class="board-header clearfix">
+    <div class="board-pile">
+        <ul class="stack hidden-stack draw-pile ui-droppable">
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+            <li class="no-drag ui-droppable">
+                <div class="card card-hidden"></div>
+            </li>
+        </ul>
+        <ul class="stack no-empty-state drawn-pile ui-droppable"></ul>
+    </div>
+    <div class="board-foundations">
+        <ul class="stack ui-droppable"></ul>
+        <ul class="stack ui-droppable"></ul>
+        <ul class="stack ui-droppable"></ul>
+        <ul class="stack ui-droppable"></ul>
+    </div>
+</div>
+<div class="board-stacks clearfix">
+<ul class="stack show-stack ui-droppable">
+    <li class="ui-draggable ui-droppable">
+        <div class="card diamond" data-cid="c52">
+            <span class="tl-number">5</span>
+
+            <div class="pattern five">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">5</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card spade" data-cid="c45">
+            <span class="tl-number">2</span>
+
+            <div class="pattern two">
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">2</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card spade" data-cid="c39">
+            <span class="tl-number">6</span>
+
+            <div class="pattern six">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">6</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card clubs" data-cid="c34">
+            <span class="tl-number">4</span>
+
+            <div class="pattern four">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">4</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card diamond" data-cid="c30">
+            <span class="tl-number">7</span>
+
+            <div class="pattern seven">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">7</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card diamond" data-cid="c27">
+            <span class="tl-number">K</span>
+
+            <div class="pattern king">
+
+            </div>
+            <span class="br-number">K</span>
+        </div>
+    </li>
+</ul>
+
+<ul class="stack show-stack ui-droppable">
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="no-drag ui-droppable">
+        <div class="card card-hidden"></div>
+    </li>
+    <li class="ui-draggable ui-droppable">
+        <div class="card spade" data-cid="c25">
+            <span class="tl-number">7</span>
+
+            <div class="pattern seven">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+            <span class="br-number">7</span>
+        </div>
+    </li>
+</ul>
+</div>
+</div>
+
+<footer>
+    <div class="score-board clearfix">
+        <div class="timer">
+            <label>timer</label>
+            <span>0:00</span>
+        </div>
+        <div class="score">
+            <label>score</label>
+            <span>0</span>
+        </div>
+    </div>
+
+    <button class="redeal">Redeal</button>
+</footer>
+</div>
+
+<a href="http://cloudcannon.com/" class="cloudcannon-badge">
+    <img src="./img/back.png" width="150" height="110" alt="Built by Cloud Cannon">
+    <strong>Crafted Pointlessly</strong>
+    <span>for your enjoyment</span>
+</a>
+
+<div class="common-card-size"></div>
+<div class="condensed-card-size"></div>
+<div class="last-card-size"></div>
+
+
+</body>
+</html>

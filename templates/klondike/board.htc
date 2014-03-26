@@ -1,0 +1,52 @@
+<div class="board">
+    <div class="board-header clearfix">
+        <div class="board-pile">
+            <ul class="stack hidden-stack draw-pile">
+            </ul>
+            <ul class="stack no-empty-state drawn-pile"></ul>
+        </div>
+        <div class="board-foundations">
+            <ul class="stack"></ul>
+            <ul class="stack"></ul>
+            <ul class="stack"></ul>
+            <ul class="stack"></ul>
+        </div>
+    </div>
+    <div class="board-stacks clearfix">
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+        
+        <ul class="stack show-stack">
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="score-board clearfix">
+        <div class="timer">
+            <label>timer</label>
+            <span>0:00</span>
+        </div>
+        <div class="score">
+            <label>score</label>
+            <span>0</span>
+        </div>
+    </div>
+
+    <button class="redeal">Redeal</button>
+</footer>

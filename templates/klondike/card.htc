@@ -1,0 +1,11 @@
+<li>
+    <div class="card <%= card.get("suit") %>" data-cid="<%= card.cid %>">
+        <span class="tl-number"><%= card.toChar() %></span>
+        <div class="pattern <%= card.get("type") %>">
+            <% for (var i = card.getPictureSectionCount() - 1; i >= 0; i--) { %>
+                <span></span>
+            <% } %>
+        </div>
+        <span class="br-number"><%= card.toChar() %></span>
+    </div>
+</li>
